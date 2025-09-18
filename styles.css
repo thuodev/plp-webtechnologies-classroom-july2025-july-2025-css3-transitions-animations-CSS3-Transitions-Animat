@@ -1,0 +1,58 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Buttons */
+.btn {
+  background-color: #ddd;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #c7e9f1;
+  transform: scale(1.05);
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Box styling */
+.box {
+  width: 100px;
+  height: 100px;
+  margin-top: 1rem;
+  background-color: #ff6b6b;
+  border-radius: 8px;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* Keyframe animation triggered by JS */
+@keyframes spinAndGrow {
+  0% { transform: scale(1) rotate(0deg); background-color: #ff6b6b; }
+  50% { transform: scale(1.3) rotate(180deg); background-color: #ffa502; }
+  100% { transform: scale(1) rotate(360deg); background-color: #1dd1a1; }
+}
+
+/* Class to apply animation dynamically */
+.animate {
+  animation: spinAndGrow 1s ease-in-out forwards;
+}
